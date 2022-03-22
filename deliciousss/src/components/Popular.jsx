@@ -16,10 +16,9 @@ function Popular() {
     setPopular(data.recipes)
   }
 
-  return <div>
-
-      {popular.map((recipe) => {
-        return(
+  return (
+    <div>
+        return (
           <Wrapper>
             <h3>Popular Picks</h3>
 
@@ -35,12 +34,10 @@ function Popular() {
                 );
               })}
               </Splide>
-
           </Wrapper>
-        
         );
-      })}
     </div>
+  );
 }
 
 const Wrapper = styled.div `
